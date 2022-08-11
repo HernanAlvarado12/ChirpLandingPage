@@ -17,19 +17,29 @@
         <header>
             <nav class ="header__navbar">
                 <figure class ="navbar__figure container--padding">
-                    <span class ="figure__title figure--weight-bold">Chirp</span>
-                    <img src ="./Assets/menu.svg" alt ="icono de menu">
+                    <span class ="figure__title figure--weight-bold">Chirp.</span>
+                    <img class ="figure__menu" src ="./Assets/menu.svg" alt ="icono de menu">
+                    <ul class ="figure__links container--flex">
+                        <li><a class ="links__alinks" href ="">Home</a></li>
+                        <li><a class ="links__alinks" href ="">Pricing</a></li>
+                        <li><a class ="links__alinks" href ="">FAQ</a></li>
+                        <button class ="section__button element--padding-two element--flex element--flex-column-gap section--weight-bold">
+                            <img src ="./Assets/twitter.svg" alt ="icono de Twitter">
+                            <span>Sing in with Twitter</span>
+                        </button>
+                    </ul>
                 </figure>
-                <figure class ="navbar__figure navbar__figure--height container--padding">
+                <picture class ="navbar__picture navbar__picture--height container--padding">
+                    <source media ="(min-width: 624px)" srcset ="./Assets/hero_Image_tablet.png">
                     <img class ="figure__image" src ="./Assets/hero_Image.png" alt ="">
-                </figure>                   
-                <section class ="container--padding">
-                    <h1 class ="section__title">Twitter analytics taken to a whole new level.</h1>
+                </picture>               
+                <section class ="navbar__section container--padding">
+                    <h1 class ="section__title section__title--size">Twitter analytics taken to a whole new level.</h1>
                     <p class ="section__subtitle section--line">
                         Chirp is a cuite od Twitter analytics thar will help you better understand your audience, 
                         which tweets they like, and most importantly, when they are the most active ont Twitter.
                     </p>
-                    <button class ="section__button element--flex element--flex-column-gap section--weight-bold">
+                    <button class ="section__button section__button-table element--flex element--flex-column-gap section--weight-bold">
                         <img src ="./Assets/twitter.svg" alt ="icono de Twitter">
                         <span>Sing in with Twitter</span>
                     </button>
@@ -39,8 +49,8 @@
                             <img src ="" alt ="">
                         </a>
                     </div>
-                    <section>
-                        <figure class ="container--flex container--flex--justify">
+                    <section class ="navbar__section__images">
+                        <figure class ="container--flex figure__images container--flex--justify">
                             <img class ="image--z-index" src ="./Assets/userAvatar09.svg" alt ="icono de usuario">
                             <img class ="image--z-index" src ="./Assets/userAvatar08.svg" alt ="icono de usuario">
                             <img class ="image--z-index" src ="./Assets/userAvatar07.svg" alt ="icono de usuario">
@@ -97,8 +107,8 @@
                 </article>
             </section>
 
-            <section class ="main__section main__section--background">
-                <h1 class ="section__title section__title--margin">What our customers say</h1>
+            <section class ="main__section main__section__customers main__section--background container--padding">
+                <h1 class ="section__title section__title--area section__title--margin">What our customers say</h1>
                 <article class ="section__article section__article--background">
                     <div class ="container--flex container--flex--justify-space">
                         <figure class ="container--flex container--flex-column-gap">
@@ -113,7 +123,7 @@
                     <p class ="article__content article--line">
                         I just tried out @chirp and it's amazing, love all the analytics i can see.
                     </p>
-                    <div class ="container--flex container--flex--justify-space">
+                    <div class ="article__div container--flex container--flex--justify-space">
                         <figure class ="container--flex container--flex-column-gap">
                             <img src ="./Assets/Like.svg" alt ="icono de me gusta">
                             <figcaption class ="article__content">2</figcaption>
@@ -169,9 +179,9 @@
                 </article>
             </section>
 
-            <div class ="main__section">
+            <div class ="main__section main__section-width">
                 <section>
-                    <h1 class ="section__title content--center">One simple price plan.</h1>
+                    <h1 class ="section__title section__title--width content--center">One simple price plan.</h1>
                     <p class ="section__subtitle section__subtitle--size section--line content--center">
                         Start growing your Twitter account by analyzing your follower's patterns.
                     </p>

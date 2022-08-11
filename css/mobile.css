@@ -24,6 +24,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ul { list-style: none; }
 a { text-decoration: none; }
 
 .element--padding, .container--padding {
@@ -41,14 +42,14 @@ a { text-decoration: none; }
     background-color: var(--beisg);
 }
 
-.navbar__figure {
+.navbar__figure, .navbar__picture {
     height: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar__figure--height {
+.navbar__figure--height, .navbar__picture--height {
     height: auto;
 }
 
@@ -185,17 +186,13 @@ a { text-decoration: none; }
     font-weight: normal;
 }
 
-.div__title {
+.div__title, .div__span, .links__alinks {                   
     font-size: 1.6rem;
 }
 
 .div__content {
     font-size: 4rem;
     font-weight: bold;
-}
-
-.div__span {
-    font-size: 1.6rem;
 }
 
 .footer {
@@ -208,4 +205,8 @@ a { text-decoration: none; }
 
 .section__content {
     font-size: 1.4rem;
+}
+
+.figure__links {
+    display: none;
 }
