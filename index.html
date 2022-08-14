@@ -14,7 +14,7 @@
 
     <body>
 
-        <header>
+        <header class ="max__container">
             <nav class ="header__navbar">
                 <figure class ="navbar__figure container--padding">
                     <span class ="figure__title figure--weight-bold">Chirp.</span>
@@ -29,50 +29,53 @@
                         </button>
                     </ul>
                 </figure>
-                <picture class ="navbar__picture navbar__picture--height container--padding">
-                    <source media ="(min-width: 624px)" srcset ="./Assets/hero_Image_tablet.png">
-                    <img class ="figure__image" src ="./Assets/hero_Image.png" alt ="">
-                </picture>               
-                <section class ="navbar__section container--padding">
-                    <h1 class ="section__title section__title--size">Twitter analytics taken to a whole new level.</h1>
-                    <p class ="section__subtitle section--line">
-                        Chirp is a cuite od Twitter analytics thar will help you better understand your audience, 
-                        which tweets they like, and most importantly, when they are the most active ont Twitter.
-                    </p>
-                    <button class ="section__button section__button-table element--flex element--flex-column-gap section--weight-bold">
-                        <img src ="./Assets/twitter.svg" alt ="icono de Twitter">
-                        <span>Sing in with Twitter</span>
-                    </button>
-                    <div class ="section__alink section--weight-bold">
-                        <a href ="">
-                            <span class ="section__span section__span--arrow">Learn more</span>
-                            <img src ="" alt ="">
-                        </a>
-                    </div>
-                    <section class ="navbar__section__images">
-                        <figure class ="container--flex figure__images container--flex--justify">
-                            <img class ="image--z-index" src ="./Assets/userAvatar09.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar08.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar07.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar06.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar05.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar04.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar03.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar02.svg" alt ="icono de usuario">
-                            <img class ="image--z-index" src ="./Assets/userAvatar01.svg" alt ="icono de usuario">
-                        </figure>
+                <div class ="navbar__div">
+                    <picture class ="navbar__picture navbar__picture--height container--padding">
+                        <source media ="(min-width: 1024px)" srcset ="./Assets/hero_Image.png">
+                        <source media ="(min-width: 624px)" srcset ="./Assets/hero_Image_tablet.png">
+                        <img class ="figure__image" src ="./Assets/hero_Image.png" alt ="">
+                    </picture>               
+                    <section class ="navbar__section container--padding">
+                        <h1 class ="section__title section__title--size">Twitter analytics taken to a whole new level.</h1>
                         <p class ="section__subtitle section--line">
-                            Join <span class ="section__span section--weight-bold">195</span> others who have analyzed
-                            their followers and scheduled <span class ="section__span section--weight-bold">1342</span> tweets!
+                            Chirp is a cuite od Twitter analytics thar will help you better understand your audience, 
+                            which tweets they like, and most importantly, when they are the most active ont Twitter.
                         </p>
+                        <button class ="section__button section__button-table element--flex element--flex-column-gap section--weight-bold">
+                            <img src ="./Assets/twitter.svg" alt ="icono de Twitter">
+                            <span>Sing in with Twitter</span>
+                        </button>
+                        <div class ="section__alink section--weight-bold">
+                            <a href ="">
+                                <span class ="section__span section__span--arrow">Learn more</span>
+                                <img src ="" alt ="">
+                            </a>
+                        </div>
+                        <section class ="navbar__section__images">
+                            <figure class ="container--flex figure__images container--flex--justify">
+                                <img class ="image--z-index" src ="./Assets/userAvatar09.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar08.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar07.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar06.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar05.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar04.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar03.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar02.svg" alt ="icono de usuario">
+                                <img class ="image--z-index" src ="./Assets/userAvatar01.svg" alt ="icono de usuario">
+                            </figure>
+                            <p class ="section__subtitle section--line">
+                                Join <span class ="section__span section--weight-bold">195</span> others who have analyzed
+                                their followers and scheduled <span class ="section__span section--weight-bold">1342</span> tweets!
+                            </p>
+                        </section>
                     </section>
-                </section>
+                </div>
             </nav>
         </header>
 
         <main>
-            <section class ="main__section container--padding">
-                <h1 class ="section__title section__title--margin">Features that help you Tweet smarter.</h1>
+            <section class ="main__section main__section-max main--grid grid--column-gap container--padding">
+                <h1 class ="section__title section__title--width section__title--margin">Features that help you Tweet smarter.</h1>
                 <article class ="section__article">
                     <img src ="" alt ="">
                     <h2>Analytics</h2>
@@ -107,77 +110,81 @@
                 </article>
             </section>
 
-            <section class ="main__section main__section__customers main__section--background container--padding">
-                <h1 class ="section__title section__title--area section__title--margin">What our customers say</h1>
-                <article class ="section__article section__article--background">
-                    <div class ="container--flex container--flex--justify-space">
-                        <figure class ="container--flex container--flex-column-gap">
-                            <img src ="./Assets/userAvatar01.svg" alt ="">
-                            <figcaption>
-                                <h3>Sara May</h3>
-                                <p>@sara_may</p>
-                            </figcaption>
-                        </figure>
-                        <img src ="./Assets/twitter(Blue).svg" alt ="">
-                    </div>
-                    <p class ="article__content article--line">
-                        I just tried out @chirp and it's amazing, love all the analytics i can see.
-                    </p>
-                    <div class ="article__div container--flex container--flex--justify-space">
-                        <figure class ="container--flex container--flex-column-gap">
-                            <img src ="./Assets/Like.svg" alt ="icono de me gusta">
-                            <figcaption class ="article__content">2</figcaption>
-                        </figure>
-                        <span class ="article__content">March 2, 2022</span>
-                    </div>
-                </article>
-                <article class ="section__article section__article--background">
-                    <div class ="container--flex container--flex--justify-space">
-                        <figure class ="container--flex container--flex-column-gap">
-                            <img src ="./Assets/userAvatar09.svg" alt ="">
-                            <figcaption>
-                                <h3>Jack Scott</h3>
-                                <p>@jackscott_</p>
-                            </figcaption>
-                        </figure>
-                        <img src ="./Assets/twitter(Blue).svg" alt ="">
-                    </div>
-                    <p class ="article__content article--line">
-                        I initial started using Chirp to support the co-founder as i personally knew him, but 
-                        after having tried it out for a few weeks, i can genuinely say this changed my Twitter 
-                        game.
-                    </p>
-                    <div class ="container--flex container--flex--justify-space">
-                        <figure class ="container--flex container--flex-column-gap">
-                            <img src ="./Assets/Like.svg" alt ="icono de me gusta">
-                            <figcaption class ="article__content">32</figcaption>
-                        </figure>
-                        <span class ="article__content">March 2, 2022</span>
-                    </div>
-                </article>
-                <article class ="section__article section__article--background">
-                    <div class ="container--flex container--flex--justify-space">
-                        <figure class ="container--flex container--flex-column-gap">
-                            <img src ="./Assets/userAvatar03.svg" alt ="">
-                            <figcaption>
-                                <h3>Jessica May</h3>
-                                <p>@jmay98</p>
-                            </figcaption>
-                        </figure>
-                        <img src ="./Assets/twitter(Blue).svg" alt ="">
-                    </div>
-                    <p class ="article__content article--line">
-                        Absolutely love everything about Chirp, from the desing to how everything works smoothly.  
-                    </p>
-                    <div class ="container--flex container--flex--justify-space">
-                        <figure class ="container--flex container--flex-column-gap">
-                            <img src ="./Assets/Like.svg" alt ="icono de me gusta">
-                            <figcaption class ="article__content">221</figcaption>
-                        </figure>
-                        <span class ="article__content">March 2, 2022</span>
-                    </div>
-                </article>
-            </section>
+            <div class ="max__container-two">
+                <div class ="main__section-max">
+                    <section class ="main__section main__section__customers main__section--background container--padding">
+                        <h1 class ="section__title section__title--width-two section__title--area section__title--margin">What our customers say</h1>
+                        <article class ="section__article section__article--background">
+                            <div class ="container--flex container--flex--justify-space">
+                                <figure class ="container--flex container--flex-column-gap">
+                                    <img src ="./Assets/userAvatar01.svg" alt ="">
+                                    <figcaption>
+                                        <h3>Sara May</h3>
+                                        <p>@sara_may</p>
+                                    </figcaption>
+                                </figure>
+                                <img src ="./Assets/twitter(Blue).svg" alt ="">
+                            </div>
+                            <p class ="article__content article--line">
+                                I just tried out @chirp and it's amazing, love all the analytics i can see.
+                            </p>
+                            <div class ="article__div container--flex container--flex--justify-space">
+                                <figure class ="container--flex container--flex-column-gap">
+                                    <img src ="./Assets/Like.svg" alt ="icono de me gusta">
+                                    <figcaption class ="article__content">2</figcaption>
+                                </figure>
+                                <span class ="article__content">March 2, 2022</span>
+                            </div>
+                        </article>
+                        <article class ="section__article section__article--background">
+                            <div class ="container--flex container--flex--justify-space">
+                                <figure class ="container--flex container--flex-column-gap">
+                                    <img src ="./Assets/userAvatar09.svg" alt ="">
+                                    <figcaption>
+                                        <h3>Jack Scott</h3>
+                                        <p>@jackscott_</p>
+                                    </figcaption>
+                                </figure>
+                                <img src ="./Assets/twitter(Blue).svg" alt ="">
+                            </div>
+                            <p class ="article__content article--line">
+                                I initial started using Chirp to support the co-founder as i personally knew him, but 
+                                after having tried it out for a few weeks, i can genuinely say this changed my Twitter 
+                                game.
+                            </p>
+                            <div class ="container--flex container--flex--justify-space">
+                                <figure class ="container--flex container--flex-column-gap">
+                                    <img src ="./Assets/Like.svg" alt ="icono de me gusta">
+                                    <figcaption class ="article__content">32</figcaption>
+                                </figure>
+                                <span class ="article__content">March 2, 2022</span>
+                            </div>
+                        </article>
+                        <article class ="section__article section__article--background">
+                            <div class ="container--flex container--flex--justify-space">
+                                <figure class ="container--flex container--flex-column-gap">
+                                    <img src ="./Assets/userAvatar03.svg" alt ="">
+                                    <figcaption>
+                                        <h3>Jessica May</h3>
+                                        <p>@jmay98</p>
+                                    </figcaption>
+                                </figure>
+                                <img src ="./Assets/twitter(Blue).svg" alt ="">
+                            </div>
+                            <p class ="article__content article--line">
+                                Absolutely love everything about Chirp, from the desing to how everything works smoothly.  
+                            </p>
+                            <div class ="container--flex container--flex--justify-space">
+                                <figure class ="container--flex container--flex-column-gap">
+                                    <img src ="./Assets/Like.svg" alt ="icono de me gusta">
+                                    <figcaption class ="article__content">221</figcaption>
+                                </figure>
+                                <span class ="article__content">March 2, 2022</span>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
 
             <div class ="main__section main__section-width">
                 <section>
